@@ -365,7 +365,8 @@
   }
   .polaroidImg { height: 110px; }
 
-  .labels { bottom: 140px; }
+  .aboutBtn { display: none; }
+  .labels   { display: none; }
 
   .links a {
     font-size: 13px;

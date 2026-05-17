@@ -1,0 +1,346 @@
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+:root{
+  --ink:#252525;
+  --plum:#3f1f2e;
+  --pink:#d9a0b6;
+  --paper:#f4f2f1;
+  --shadow: 0 18px 35px rgba(0,0,0,.14);
+}
+
+.hero{
+  min-height:100vh;
+  background: var(--paper);
+  position:relative;
+  overflow:hidden;
+  padding: 48px 24px;
+}
+
+.heroGrid{
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.left{
+  padding-top: 22px;
+}
+
+.nameRow{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  height: 42px;
+  padding: 0 18px;
+  border: 2px solid var(--plum);
+  border-radius: 999px;
+  color: var(--plum);
+  font-weight: 500;
+  background: rgba(255,255,255,0.25);
+}
+
+.name{ 
+  line-height: 0.95;
+  animation: float 3s ease-in-out infinite;
+}
+
+.first{
+  font-size: 84px;
+  color: var(--pink);
+  font-family: "Allura", cursive;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.last{
+  margin-top: 6px;
+  font-size: 86px;
+  color: #141414;
+  font-family: "Allura", cursive;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.bio{
+  margin-top: 22px;
+  max-width: 640px;
+  color: #4a3640;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.bio p{ margin: 0 0 14px 0; }
+
+.chips{
+  margin-top: 18px;
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.chip{
+  background: var(--plum);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.links{
+  margin-top: 18px;
+  display:flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a{
+  color: var(--pink);
+  font-weight: 600;
+}
+
+/* RIGHT COLLAGE */
+.right{
+  position: relative;
+  min-height: 620px;
+}
+
+.aboutBtn{
+  position:absolute;
+  top: 0;
+  right: 0;
+  background: var(--plum);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.photoCard{
+  position: absolute;
+  top: 72px;
+  right: 0;
+  width: 420px;
+  height: 430px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photoCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.4);
+}
+
+/* Important for next/image fill */
+.bigPhoto{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tape{
+  position:absolute;
+  width: 140px;
+  height: 26px;
+  background: #e9c9b0;
+  opacity: 0.95;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.18));
+  border-radius: 6px;
+  z-index: 3;
+}
+
+.tapeTop{
+  top: -10px;
+  left: 10px;
+  transform: rotate(-8deg);
+}
+
+.tapeBottom{
+  bottom: -10px;
+  right: 38px;
+  transform: rotate(10deg);
+  z-index: 3;
+}
+
+.sparkle{
+  position:absolute;
+  width: 44px;
+  height: 44px;
+  background: radial-gradient(circle, #f5c9d9 35%, transparent 36%);
+  transform: rotate(45deg);
+  opacity: 0.95;
+  z-index: 3;
+}
+
+.sparkleLeft{
+  top: 95px;
+  left: -18px;
+}
+
+.polaroid{
+  position:absolute;
+  bottom: -10px;
+  right: 170px;
+  width: 250px;
+  background: #fff;
+  padding: 14px 14px 38px 14px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transform: rotate(-6deg);
+  z-index: 4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(-6deg) translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.polaroidImg{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 6px;
+  display:block;
+}
+
+.clip{
+  position:absolute;
+  top: -14px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #cfcfcf;
+  border-radius: 10px;
+  background: transparent;
+  transform: rotate(12deg);
+}
+
+/* angled labels */
+.labels{
+  position:absolute;
+  bottom: 70px;
+  right: 0;
+  display:flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  z-index: 5;
+}
+
+.label{
+  background: var(--plum);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.label1 { transform: rotate(-10deg); }
+.label1:hover { transform: rotate(-10deg) scale(1.07) translateX(4px); box-shadow: 0 15px 30px rgba(0,0,0,.2); }
+
+.label2 { transform: rotate(-10deg); margin-right: 14px; }
+.label2:hover { transform: rotate(-10deg) scale(1.07) translateX(4px); box-shadow: 0 15px 30px rgba(0,0,0,.2); }
+
+/* Scroll to know more indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--plum);
+  font-size: 14px;
+  font-weight: 500;
+  animation: bounce 2s infinite;
+}
+
+.scrollArrow {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--plum);
+  animation: bobbing 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 960px){
+  .heroGrid{
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .right{
+    min-height: 560px;
+  }
+  .photoCard{
+    right: 50%;
+    transform: translateX(50%);
+    width: min(420px, 92vw);
+  }
+  .polaroid{
+    right: 50%;
+    transform: translateX(50%) rotate(-6deg);
+    bottom: -30px;
+  }
+  .labels{
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 220px;
+    align-items: center;
+  }
+  .aboutBtn{
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .first{font-size: 64px;}
+  .last{font-size: 66px;}
+}

@@ -50,10 +50,6 @@ export default function Hero() {
 
         {/* RIGHT */}
         <div className={styles.right}>
-          <a className={styles.aboutBtn} href="#about">
-            about me
-          </a>
-
           <div className={styles.photoCard}>
             <div className={`${styles.tape} ${styles.tapeTop}`} />
 
@@ -76,10 +72,6 @@ export default function Hero() {
             />
           </div>
 
-          <div className={styles.labels}>
-            <span className={`${styles.label} ${styles.label1}`}>engineering student</span>
-            <span className={`${styles.label} ${styles.label2}`}>tech &amp; systems builder</span>
-          </div>
         </div>
       </div>
 

@@ -20,6 +20,7 @@ export default function Research() {
     <section id="research" className={styles.research}>
       <div className={styles.container}>
         <div className={styles.header}>
+          <span className={styles.sectionNum} aria-hidden="true">04</span>
           <span className={styles.tag}>— research experience —</span>
           <h2 className={styles.title}>Research</h2>
         </div>

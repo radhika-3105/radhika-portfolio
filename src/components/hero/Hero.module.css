@@ -24,6 +24,39 @@
   padding: 48px 24px;
 }
 
+/* Big decorative background name */
+.bgName {
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  line-height: 0.82;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bgFirst {
+  font-family: 'Allura', cursive;
+  font-size: clamp(72px, 13vw, 165px);
+  color: var(--pink);
+  opacity: 0.48;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: block;
+}
+
+.bgLast {
+  font-family: 'Allura', cursive;
+  font-size: clamp(72px, 13vw, 165px);
+  color: var(--plum);
+  opacity: 0.17;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: block;
+}
+
 .heroGrid{
   max-width: 1180px;
   margin: 0 auto;
@@ -31,29 +64,22 @@
   grid-template-columns: 1.1fr 0.9fr;
   gap: 40px;
   align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
 .left{
   padding-top: 22px;
 }
 
-.nameRow{
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.pill{
-  display:inline-flex;
-  align-items:center;
-  height: 42px;
-  padding: 0 18px;
-  border: 2px solid var(--plum);
-  border-radius: 999px;
-  color: var(--plum);
-  font-weight: 500;
-  background: rgba(255,255,255,0.25);
+.greeting {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--pink);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .name{ 

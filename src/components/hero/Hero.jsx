@@ -6,13 +6,11 @@ export default function Hero() {
       <div className={styles.heroGrid}>
         {/* LEFT */}
         <div className={styles.left}>
-          <div className={styles.nameRow}>
-            <span className={styles.pill}>Hello there I'm</span>
+          <span className={styles.greeting}>Hello there, I&apos;m</span>
 
-            <div className={styles.name}>
-              <div className={styles.first}>Radhika</div>
-              <div className={styles.last}>Chopra</div>
-            </div>
+          <div className={styles.name}>
+            <div className={styles.first}>Radhika</div>
+            <div className={styles.last}>Chopra</div>
           </div>
 
           <div className={styles.bio}>

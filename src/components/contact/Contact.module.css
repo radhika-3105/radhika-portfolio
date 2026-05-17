@@ -26,10 +26,10 @@
 
 .title {
   font-family: 'Allura', cursive;
-  font-size: 64px;
+  font-size: clamp(64px, 10vw, 110px);
   color: #3f1f2e;
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.0;
   font-weight: 400;
 }
 

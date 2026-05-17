@@ -76,6 +76,7 @@ export default function Projects() {
     <section id="projects" className={styles.projects}>
       <div className={styles.container}>
         <div className={styles.header}>
+          <span className={styles.sectionNum} aria-hidden="true">03</span>
           <span className={styles.tag}>— things I&apos;ve built —</span>
           <h2 className={styles.title}>Projects</h2>
         </div>

@@ -10,8 +10,25 @@
 }
 
 .header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 56px;
+  position: relative;
+  overflow: visible;
+}
+
+.sectionNum {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  font-size: clamp(110px, 17vw, 210px);
+  font-weight: 900;
+  color: #3f1f2e;
+  opacity: 0.04;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  user-select: none;
+  font-family: Inter, system-ui, sans-serif;
 }
 
 .tag {
@@ -26,10 +43,10 @@
 
 .title {
   font-family: 'Allura', cursive;
-  font-size: 64px;
+  font-size: clamp(56px, 7vw, 82px);
   color: #3f1f2e;
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.05;
   font-weight: 400;
 }
 

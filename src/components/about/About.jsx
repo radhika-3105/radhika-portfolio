@@ -5,6 +5,7 @@ export default function About() {
     <section id="about" className={styles.about}>
       <div className={styles.container}>
         <div className={styles.header}>
+          <span className={styles.sectionNum} aria-hidden="true">01</span>
           <span className={styles.tag}>— get to know me —</span>
           <h2 className={styles.title}>A little about me</h2>
         </div>

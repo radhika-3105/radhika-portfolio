@@ -32,6 +32,7 @@ export default function Skills() {
     <section id="skills" className={styles.skills}>
       <div className={styles.container}>
         <div className={styles.header}>
+          <span className={styles.sectionNum} aria-hidden="true">02</span>
           <span className={styles.tag}>— what I work with —</span>
           <h2 className={styles.title}>Skills</h2>
         </div>

@@ -63,16 +63,7 @@ export default function Hero() {
             <div className={`${styles.tape} ${styles.tapeBottom}`} />
           </div>
 
-          <div className={styles.polaroid}>
-            <div className={styles.clip} />
-            <img
-              src="/images/polaroid.jpg"
-              alt="Radhika polaroid"
-              className={styles.polaroidImg}
-            />
-          </div>
-
-        </div>
+</div>
       </div>
 
       {/* Scroll to know more */}

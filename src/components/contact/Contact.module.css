@@ -102,7 +102,7 @@
 }
 
 @media (max-width: 500px) {
-  .title {
-    font-size: 52px;
-  }
+  .contact { padding: 60px 16px; }
+  .title { font-size: 44px; }
+  .cardValue { word-break: break-all; font-size: 13px; }
 }

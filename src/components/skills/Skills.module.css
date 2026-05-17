@@ -96,6 +96,8 @@
   }
 
   .title {
-    font-size: 52px;
+    font-size: 44px;
   }
+
+  .skills { padding: 60px 16px; }
 }

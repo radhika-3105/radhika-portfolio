@@ -194,3 +194,10 @@
     font-size: 52px;
   }
 }
+
+@media (max-width: 480px) {
+  .about { padding: 60px 16px; }
+  .title { font-size: 44px; }
+  .statCard { min-width: 100px; padding: 20px 16px; }
+  .statNum { font-size: 40px; }
+}

@@ -139,7 +139,12 @@
 }
 
 @media (max-width: 600px) {
-  .title {
-    font-size: 52px;
-  }
+  .title { font-size: 52px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .projects { padding: 60px 16px; }
+  .title { font-size: 44px; }
+  .card { padding: 22px 18px; }
 }

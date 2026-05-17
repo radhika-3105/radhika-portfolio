@@ -344,3 +344,33 @@
   .first{font-size: 64px;}
   .last{font-size: 66px;}
 }
+
+@media (max-width: 480px){
+  .hero { padding: 32px 16px 80px; }
+  .first { font-size: 52px; }
+  .last  { font-size: 54px; }
+  .bio   { font-size: 15px; }
+
+  .right { min-height: 400px; }
+
+  .photoCard {
+    width: min(300px, 86vw);
+    height: 310px;
+    top: 48px;
+  }
+
+  .polaroid {
+    width: 160px;
+    bottom: -16px;
+  }
+  .polaroidImg { height: 110px; }
+
+  .labels { bottom: 140px; }
+
+  .links a {
+    font-size: 13px;
+    word-break: break-all;
+  }
+
+  .scrollIndicator { bottom: 20px; font-size: 12px; }
+}

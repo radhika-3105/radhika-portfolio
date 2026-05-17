@@ -7,11 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
-  "homepage": "https://radhika-3105.github.io/radhika-portfolio",
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"

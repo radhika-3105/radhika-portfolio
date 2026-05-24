@@ -133,11 +133,17 @@
   font-weight: 600;
 }
 
+.cardLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
 .githubBtn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  align-self: flex-start;
   background: #3f1f2e;
   color: #fff;
   padding: 9px 18px;
@@ -145,7 +151,6 @@
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
-  margin-top: 4px;
   transition: background 0.2s, transform 0.2s;
 }
 
@@ -153,6 +158,28 @@
   background: #6b3150;
   transform: translateX(3px);
   color: #fff;
+}
+
+.websiteBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: #3f1f2e;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #3f1f2e;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.websiteBtn:hover {
+  background: #d9a0b6;
+  border-color: #d9a0b6;
+  color: #3f1f2e;
+  transform: translateX(3px);
 }
 
 @media (max-width: 600px) {

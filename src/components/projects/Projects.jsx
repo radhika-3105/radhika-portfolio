@@ -7,6 +7,7 @@ const techProjects = [
       'Built role-based user and admin interfaces for a platform that digitizes Sikkim monastery manuscripts. Created an OCR processing pipeline from raw to cleaned to validated, tested Azure OCR vs Tesseract for Tibetan scripts, and debugged deployment issues during a 36-hour national hackathon.',
     tech: ['React', 'Next.js', 'Tailwind CSS', 'JavaScript', 'Tesseract OCR'],
     github: 'https://github.com/radhika-3105',
+    website: 'https://sih-website-three.vercel.app/',
   },
   {
     title: 'ResolveIndiaAI : Multilingual Complaint Resolution Chatbot',
@@ -14,6 +15,7 @@ const techProjects = [
       'A Python NLP pipeline that figures out what a user is complaining about across multiple Indian languages and routes it to the right department automatically with a unique complaint ID. Built to be modular so new languages and departments can be plugged in easily.',
     tech: ['Python', 'NLP', 'Email Routing', 'Multilingual'],
     github: 'https://github.com/Aktagh1234/grievancesbot',
+    website: 'https://grievancesbot.vercel.app/',
   },
   {
     title: 'Rail Kavach : Railway Safety and Monitoring System',
@@ -21,6 +23,7 @@ const techProjects = [
       'A GovTech hackathon project to detect and report safety incidents on railway tracks and stations. Designed alert workflows that connect field reports to control rooms and response teams, with a focus on making it actually usable for railway staff on the ground.',
     tech: ['GovTech Hackathon', 'Safety Systems', 'Alert Workflows'],
     github: 'https://github.com/radhika-3105',
+    website: 'https://rail-kavach.vercel.app/',
   },
 ];
 
@@ -54,19 +57,36 @@ function ProjectCard({ project }) {
           <span key={t} className={styles.techChip}>{t}</span>
         ))}
       </div>
-      {project.github && (
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noreferrer"
-          className={styles.githubBtn}
-        >
-          View on GitHub
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
-      )}
+      <div className={styles.cardLinks}>
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.githubBtn}
+          >
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        )}
+        {project.website && (
+          <a
+            href={project.website}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.websiteBtn}
+          >
+            Live Site
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+        )}
+      </div>
     </div>
   );
 }
